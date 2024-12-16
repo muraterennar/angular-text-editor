@@ -3,7 +3,6 @@
 <img src="https://firebasestorage.googleapis.com/v0/b/file-upload-firebase-d3899.appspot.com/o/test%2Fangular-text-editor-logo-removebg-preview.png?alt=media&token=1173e6ca-4772-4a7e-bc7c-4d10502f7022" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <p align="left">
 	<img src="https://img.shields.io/github/license/muraterennar/angular-text-editor?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/muraterennar/angular-text-editor?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/muraterennar/angular-text-editor?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/muraterennar/angular-text-editor?style=flat&color=0080ff" alt="repo-language-count">
 </p>
