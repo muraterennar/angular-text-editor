@@ -1,6 +1,6 @@
 <div align="left" style="position: relative;">
+  <h1>Angular Text Editor</h1>
 <img src="https://firebasestorage.googleapis.com/v0/b/file-upload-firebase-d3899.appspot.com/o/test%2Fangular-text-editor-logo-removebg-preview.png?alt=media&token=1173e6ca-4772-4a7e-bc7c-4d10502f7022" align="right" width="30%" style="margin: -20px 0 0 20px;">
-<h1>ANGULAR-TEXT-EDITOR</h1>
 <p align="left">
 	<img src="https://img.shields.io/github/license/muraterennar/angular-text-editor?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/muraterennar/angular-text-editor?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
@@ -20,7 +20,6 @@
 
 Welcome to the Angular Text Editor! This project provides a powerful and user-friendly text editing tool built with Angular, designed to meet a wide range of text editing needs. 🌟📜💡
 
----
 
 ## Features ✨🔧📝
 
