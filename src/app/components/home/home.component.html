@@ -1,5 +1,6 @@
 <div
   class="flex flex-col px-2 lg:px-0 items-center justify-center min-h-screen bg-gradient-to-b from-[#FFF5CD] to-[#FFCFB3] text-gray-800 cursor-pointer">
+
   <!-- Logo -->
   <img [ngSrc]="EDITOR_LOGO" width="100" height="100" alt="logo"
        class="w-64 mb-8 shadow-lg rounded-full border-4 border-[#F95454]"/>
@@ -12,6 +13,14 @@
   <!-- Description -->
   <p class="mt-4 text-lg text-center sm:text-xl text-gray-700">
     Create and edit your markdown files with ease and style!
+  </p>
+
+  <!-- GitHub Repo Link with Icon -->
+  <p class="mt-4 text-sm text-center sm:text-md text-black hover:text-[#E78F81] duration-300">
+    <a href="https://github.com/muraterennar/angular-text-editor" target="_blank" rel="noopener noreferrer"
+       class="flex items-center text-xl  justify-center gap-2">
+      <i class="ri-github-fill text-xl lg:text-2xl"></i> muraterennar/angular-text-editor
+    </a>
   </p>
 
   <!-- Button -->

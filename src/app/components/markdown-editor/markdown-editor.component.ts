@@ -15,7 +15,9 @@ import {CommonModule, NgIf} from '@angular/common';
 })
 export class MarkdownEditorComponent implements OnInit {
   // Static Markdown İçeriği
-  //markdown: string = markdownStaticData;
+  staticMarkdown: string = markdownStaticData;
+  isStaticMarkdown: boolean = true;
+  // Markdown İçeriği
   markdown: string = "";
 
   markdownEditorForm: FormGroup;
@@ -53,5 +55,10 @@ export class MarkdownEditorComponent implements OnInit {
     this.markdownEditorForm.get('markdown').valueChanges.subscribe((updatedMarkdown) => {
       this.markdown = updatedMarkdown; // Markdown bileşenine aktarılır
     });
+  }
+
+  // Toggle işlemi
+  toggleMarkdownSource() {
+    this.isStaticMarkdown = !this.isStaticMarkdown;
   }
 }
