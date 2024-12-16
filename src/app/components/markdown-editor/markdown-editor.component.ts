@@ -16,7 +16,7 @@ import {CommonModule, NgIf} from '@angular/common';
 export class MarkdownEditorComponent implements OnInit {
   // Static Markdown İçeriği
   staticMarkdown: string = markdownStaticData;
-  isStaticMarkdown: boolean = true;
+  isStaticMarkdown: boolean = false;
   // Markdown İçeriği
   markdown: string = "";
 
