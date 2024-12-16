@@ -1,0 +1,1 @@
+export const EDITOR_LOGO = 'https://firebasestorage.googleapis.com/v0/b/file-upload-firebase-d3899.appspot.com/o/test%2Fangular-text-editor-logo-removebg-preview.png?alt=media&token=1173e6ca-4772-4a7e-bc7c-4d10502f7022';

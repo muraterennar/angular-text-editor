@@ -1,0 +1,20 @@
+<!-- Breadcrumb -->
+<nav class="flex text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+  <ol class="inline-flex items-center space-x-1 md:space-x-3">
+    <li *ngFor="let breadcrumb of $breadcrumbs; let i = index">
+      <ng-container *ngIf="i === $breadcrumbs.length - 1; else notLast">
+        <span class="text-gray-500">{{ breadcrumb.name }}</span>
+      </ng-container>
+      <ng-template #notLast>
+        <div class="flex items-center">
+          <span class="material-symbols-outlined me-2">
+          home
+          </span>
+          <a [href]="breadcrumb.route" class="text-[#E78F81] hover:underline">
+            {{ breadcrumb.name }}
+          </a>
+        </div>
+      </ng-template>
+    </li>
+  </ol>
+</nav>
