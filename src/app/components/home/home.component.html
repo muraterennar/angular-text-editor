@@ -1,22 +1,22 @@
 <div
-  class="flex flex-col px-2 lg:px-0 items-center justify-center min-h-screen bg-gradient-to-b from-[#FFF5CD] to-[#FFCFB3] text-gray-800 cursor-pointer">
+  class="flex flex-col px-2 lg:px-0 items-center justify-center min-h-screen bg-gradient-to-b from-[#2C2C2C] to-[#2a2a2a] text-white cursor-pointer">
 
   <!-- Logo -->
   <img [ngSrc]="EDITOR_LOGO" width="100" height="100" alt="logo"
-       class="w-64 mb-8 shadow-lg rounded-full border-4 border-[#F95454]"/>
+       class="w-64 mb-8 shadow-lg rounded-full border-4 border-white"/>
 
   <!-- Title -->
-  <h1 class="text-4xl text-center font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-[#F95454]">
+  <h1 class="text-4xl text-center font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white">
     Welcome to <span class="text-[#E78F81] hover:text-[#F95454] duration-300">Angular Text Editor</span>
   </h1>
 
   <!-- Description -->
-  <p class="mt-4 text-lg text-center sm:text-xl text-gray-700">
+  <p class="mt-4 text-lg text-center sm:text-xl text-gray-400">
     Create and edit your markdown files with ease and style!
   </p>
 
   <!-- GitHub Repo Link with Icon -->
-  <p class="mt-4 text-sm text-center sm:text-md text-black hover:text-[#E78F81] duration-300">
+  <p class="mt-4 text-sm text-center sm:text-md text-gray-300 hover:text-[#E78F81] duration-300">
     <a href="https://github.com/muraterennar/angular-text-editor" target="_blank" rel="noopener noreferrer"
        class="flex items-center text-xl  justify-center gap-2">
       <i class="ri-github-fill text-xl lg:text-2xl"></i> muraterennar/angular-text-editor
@@ -27,7 +27,7 @@
   <button
     type="button"
     (click)="goToMarkdownEditor()"
-    class="mt-8 px-6 py-3 bg-[#E78F81] text-white text-lg font-medium rounded-lg shadow-md hover:bg-[#F95454] hover:text-[#FFF5CD] hover:shadow-xl transition duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-[#FFF5CD]"
+    class="mt-8 px-6 py-3 bg-white text-black text-lg font-medium rounded-lg shadow-md hover:bg-[#F95454] hover:text-white hover:shadow-xl transition duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-[#FFF5CD]"
   >
     Go to Markdown Editor
   </button>
