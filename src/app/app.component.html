@@ -1,9 +1,9 @@
 <router-outlet></router-outlet>
-<div class="flex items-center mt-4 gap-4 absolute left-4 bottom-4">
+<div class="flex items-center mt-4 ms-4 gap-4">
   <button (click)="incrementLikes()"
           class="text-4xl transition transform duration-300 ease-in-out hover:scale-125 hover:rotate-6">
     <i class="ri-heart-fill"
        [ngClass]="likes > 0 ? 'text-red-500 animate-pulse' : 'text-gray-400' + (isFlying ? ' fly-up' : '')"></i>
   </button>
-  <span class="text-xl">{{ likes }} likes</span>
+  <span class="text-xl text-white">{{ likes }} likes</span>
 </div>
