@@ -18,279 +18,108 @@
 </div>
 <br clear="right">
 
-## 🔗 Table of Contents
-
-- [📍 Overview](#-overview)
-- [👾 Features](#-features)
-- [📁 Project Structure](#-project-structure)
-  - [📂 Project Index](#-project-index)
-- [🚀 Getting Started](#-getting-started)
-  - [☑️ Prerequisites](#-prerequisites)
-  - [⚙️ Installation](#-installation)
-  - [🤖 Usage](#🤖-usage)
-  - [🧪 Testing](#🧪-testing)
-- [📌 Project Roadmap](#-project-roadmap)
-- [🔰 Contributing](#-contributing)
-- [🎗 License](#-license)
-- [🙌 Acknowledgments](#-acknowledgments)
+Welcome to the Angular Text Editor! This project provides a powerful and user-friendly text editing tool built with Angular, designed to meet a wide range of text editing needs. 🌟📜💡
 
 ---
 
-## 📍 Overview
+## Features ✨🔧📝
 
-<code>❯ REPLACE-ME</code>
-
----
-
-## 👾 Features
-
-<code>❯ REPLACE-ME</code>
+- **Rich Text Formatting**: Supports bold, italic, underline, and other common text styling options.
+- **Dynamic Content**: Allows users to insert images, links, and custom HTML.
+- **Custom Toolbar**: A fully customizable toolbar to include the options you need.
+- **Real-time Preview**: Provides an instant preview of the formatted content.
+- **Responsive Design**: Optimized for both desktop and mobile devices. 📱💻🚀
 
 ---
 
-## 📁 Project Structure
+## Technologies Used 🖥️🛠️📚
 
-```sh
-└── angular-text-editor/
-    ├── LICENSE
-    ├── README.md
-    ├── angular.json
-    ├── package-lock.json
-    ├── package.json
-    ├── public
-    │   └── favicon.ico
-    ├── src
-    │   ├── app
-    │   ├── index.html
-    │   ├── main.ts
-    │   └── styles.css
-    ├── tailwind.config.js
-    ├── tsconfig.app.json
-    ├── tsconfig.json
-    └── tsconfig.spec.json
-```
-
-
-### 📂 Project Index
-<details open>
-	<summary><b><code>ANGULAR-TEXT-EDITOR/</code></b></summary>
-	<details> <!-- __root__ Submodule -->
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<table>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/tsconfig.spec.json'>tsconfig.spec.json</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/package-lock.json'>package-lock.json</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/tsconfig.json'>tsconfig.json</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/tailwind.config.js'>tailwind.config.js</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/tsconfig.app.json'>tsconfig.app.json</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/angular.json'>angular.json</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/package.json'>package.json</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			</table>
-		</blockquote>
-	</details>
-	<details> <!-- src Submodule -->
-		<summary><b>src</b></summary>
-		<blockquote>
-			<table>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/main.ts'>main.ts</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/index.html'>index.html</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/styles.css'>styles.css</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			</table>
-			<details>
-				<summary><b>app</b></summary>
-				<blockquote>
-					<table>
-					<tr>
-						<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/app.routes.ts'>app.routes.ts</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/app.component.spec.ts'>app.component.spec.ts</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/app.component.ts'>app.component.ts</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/app.component.css'>app.component.css</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/app.config.ts'>app.config.ts</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/app.component.html'>app.component.html</a></b></td>
-						<td><code>❯ REPLACE-ME</code></td>
-					</tr>
-					</table>
-					<details>
-						<summary><b>common</b></summary>
-						<blockquote>
-							<details>
-								<summary><b>components</b></summary>
-								<blockquote>
-									<details>
-										<summary><b>copy-clipboard</b></summary>
-										<blockquote>
-											<table>
-											<tr>
-												<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/common/components/copy-clipboard/copy-clipboard.component.html'>copy-clipboard.component.html</a></b></td>
-												<td><code>❯ REPLACE-ME</code></td>
-											</tr>
-											<tr>
-												<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/common/components/copy-clipboard/copy-clipboard.component.ts'>copy-clipboard.component.ts</a></b></td>
-												<td><code>❯ REPLACE-ME</code></td>
-											</tr>
-											<tr>
-												<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/common/components/copy-clipboard/copy-clipboard.component.css'>copy-clipboard.component.css</a></b></td>
-												<td><code>❯ REPLACE-ME</code></td>
-											</tr>
-											</table>
-										</blockquote>
-									</details>
-								</blockquote>
-							</details>
-							<details>
-								<summary><b>directives</b></summary>
-								<blockquote>
-									<table>
-									<tr>
-										<td><b><a href='https://github.com/muraterennar/angular-text-editor/blob/master/src/app/common/directives/content-editable.directive.ts'>content-editable.directive.ts</a></b></td>
-										<td><code>❯ REPLACE-ME</code></td>
-									</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-				</blockquote>
-			</details>
-		</blockquote>
-	</details>
-</details>
+- **Angular**: Frontend framework for building the application.
+- **TypeScript**: Provides type safety and enhanced development experience.
+- **SCSS**: For styling and responsive design. 🎨👩‍💻✨
 
 ---
-## 🚀 Getting Started
 
-### ☑️ Prerequisites
+## Installation 📥⚙️🚀
 
-Before getting started with angular-text-editor, ensure your runtime environment meets the following requirements:
+To get started with the Angular Text Editor, follow these steps:
 
-- **Programming Language:** TypeScript
-- **Package Manager:** Npm
+1. Clone the repository:
 
-
-### ⚙️ Installation
-
-Install angular-text-editor using one of the following methods:
-
-**Build from source:**
-
-1. Clone the angular-text-editor repository:
-```sh
-❯ git clone https://github.com/muraterennar/angular-text-editor
-```
-
-2. Navigate to the project directory:
-```sh
-❯ cd angular-text-editor
-```
-
-3. Install the project dependencies:
-
-
-**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
-
-```sh
-❯ npm install
-```
-
-
-
-
-### 🤖 Usage
-Run angular-text-editor using the following command:
-**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
-
-```sh
- npm start
-```
-
-## 🔰 Contributing
-
-- **💬 [Join the Discussions](https://github.com/muraterennar/angular-text-editor/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://github.com/muraterennar/angular-text-editor/issues)**: Submit bugs found or log feature requests for the `angular-text-editor` project.
-- **💡 [Submit Pull Requests](https://github.com/muraterennar/angular-text-editor/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your github account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone https://github.com/muraterennar/angular-text-editor
+   ```bash
+   git clone https://github.com/muraterennar/angular-text-editor.git
+   cd angular-text-editor
    ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to github**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
 
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://github.com{/muraterennar/angular-text-editor/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=muraterennar/angular-text-editor">
-   </a>
-</p>
-</details>
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   ng serve
+   ```
+
+4. Open your browser and navigate to:
+
+   ```
+   http://localhost:4200
+   ```
+
+🌟🔗🖱️
 
 ---
 
-## 🎗 License
+## Usage 🖋️🔍💾
 
-This project is protected under the [MIT](https://github.com/muraterennar/angular-text-editor/blob/development/LICENSE) License. For more details, refer to the [LICENSE](https://github.com/muraterennar/angular-text-editor/blob/development/LICENSE) file.
+1. Use the toolbar to format text as desired.
+2. Add images, links, or custom HTML through the respective options.
+3. Preview the formatted content in real-time.
+4. Save or export your work as needed. 🖼️📑📤
+
+---
+
+## Folder Structure 📂📁🗂️
+
+- `src/app`: Contains the Angular components, services, and modules.
+- `src/assets`: Stores static assets like images and styles.
+---
+
+## Contributing 🙌💡🤝
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Make your changes and commit them:
+
+   ```bash
+   git commit -m "Add your feature description here"
+   ```
+
+4. Push to your fork and submit a pull request. 🌟🌍📤
+
+---
+
+## License 📜🖋️✔️
+
+This project is licensed under the MIT License. See the LICENSE file for more details. 📄⚖️🔓
+
+---
+
+## Contact 📧📞💬
+
+If you have any questions or suggestions, feel free to reach out via [Issues](https://github.com/muraterennar/angular-text-editor/issues). ✍️🛠️📬
+
+---
+
+Thank you for using the Angular Text Editor! 🖋️✨🌟
+
