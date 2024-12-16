@@ -1,0 +1,5 @@
+pouchDbService.resetLikes();
+
+pouchDbService.incrementLikes();
+
+pouchDbService.getLikes().then(likes => console.log(likes));

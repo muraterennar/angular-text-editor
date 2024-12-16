@@ -1,12 +1,13 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {EDITOR_LOGO} from '../../common/constants/static-images';
-import {NgOptimizedImage} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-home',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    CommonModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -21,4 +22,7 @@ export class HomeComponent {
   goToMarkdownEditor() {
     this.router.navigate(['/markdown-editor']).then(r => console.log('Navigated to markdown editor'));
   }
+
+
+
 }
