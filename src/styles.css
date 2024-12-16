@@ -4,72 +4,104 @@
 
 @layer base {
   .custom-markdown h1 {
-    @apply text-6xl font-bold mb-8; /* Alt boşluk ekler */
+    @apply text-6xl font-bold mb-8;
+    /* Alt boşluk ekler */
   }
 
   .custom-markdown h2 {
-    @apply text-4xl font-bold mb-7; /* Alt boşluk ekler */
+    @apply text-4xl font-bold mb-7;
+    /* Alt boşluk ekler */
   }
 
   .custom-markdown h3 {
-    @apply text-2xl font-bold mb-6; /* Alt boşluk ekler */
+    @apply text-2xl font-bold mb-6;
+    /* Alt boşluk ekler */
   }
 
   .custom-markdown h4 {
-    @apply text-xl font-bold mb-5; /* Alt boşluk ekler */
+    @apply text-xl font-bold mb-5;
+    /* Alt boşluk ekler */
   }
 
   .custom-markdown h5 {
-    @apply text-lg font-bold mb-4; /* Alt boşluk ekler */
+    @apply text-lg font-bold mb-4;
+    /* Alt boşluk ekler */
   }
 
   .custom-markdown h6 {
-    @apply text-base font-bold mb-3; /* Alt boşluk ekler */
+    @apply text-base font-bold mb-3;
+    /* Alt boşluk ekler */
   }
 
   .custom-markdown p {
-    @apply mb-4; /* Paragraflar için alt boşluk */
+    @apply mb-4;
+    /* Paragraflar için alt boşluk */
   }
 
   .custom-markdown ul, ol {
-    @apply mb-4; /* Liste elemanları için alt boşluk */
+    @apply mb-4;
+    /* Liste elemanları için alt boşluk */
   }
 
-  .custom-markdown hr{
-    @apply my-8; /* Yatay çizgiler için alt ve üst boşluk */
+  .custom-markdown hr {
+    @apply my-8;
+    /* Yatay çizgiler için alt ve üst boşluk */
   }
 
-  .custom-markdown ul{
-    @apply list-disc ml-8; /* Liste elemanları için disk işareti ve sol boşluk */
+  .custom-markdown ul {
+    @apply list-disc ml-8;
+    /* Liste elemanları için disk işareti ve sol boşluk */
   }
 
-  .custom-markdown ol{
-    @apply list-decimal ml-8; /* Liste elemanları için numara ve sol boşluk */
+  .custom-markdown ol {
+    @apply list-decimal ml-8;
+    /* Liste elemanları için numara ve sol boşluk */
   }
 
-  .custom-markdown blockquote{
-    @apply border-l-4 border-gray-300 bg-gray-50 pl-4 py-2 rounded ml-8 my-8; /* Alıntılar için sol çizgi ve sol boşluk */
+  .custom-markdown blockquote {
+    @apply border-l-4 border-gray-300 bg-gray-50 pl-4 py-2 rounded ml-8 my-8;
+    /* Alıntılar için sol çizgi ve sol boşluk */
   }
 
-  .custom-markdown a{
-    @apply text-blue-500; /* app etiketleri için mavi renk */
+  .custom-markdown a {
+    @apply text-blue-500;
+    /* app etiketleri için mavi renk */
   }
 
-  .custom-markdown code{
-    @apply bg-gray-200 px-1.5 py-0.5 rounded text-red-400; /* Kod blokları için arka plan ve yuvarlak kenarlar */
+  .custom-markdown code {
+    @apply bg-gray-200 px-1.5 py-0.5 rounded text-red-400;
+    /* Kod blokları için arka plan ve yuvarlak kenarlar */
   }
 
-  .custom-markdown pre{
-    @apply bg-gray-800 text-white p-4 rounded; /* Kod blokları için arka plan ve yuvarlak kenarlar */
+  .custom-markdown pre {
+    @apply bg-gray-800 text-white p-4 rounded;
+    /* Kod blokları için arka plan ve yuvarlak kenarlar */
   }
 
-  .custom-markdown table{
-    @apply w-full border-collapse border border-gray-300; /* Tablolar için kenarlar ve arka plan */
+  .custom-markdown table {
+    @apply w-full border-collapse border border-gray-300;
+    /* Tablolar için kenarlar ve arka plan */
   }
 
-  .custom-markdown th, td{
-    @apply border border-gray-300 p-2; /* Tablo başlıkları ve hücreleri için kenarlar ve iç boşluk */
+  .custom-markdown th, td {
+    @apply border border-gray-300 p-2;
+    /* Tablo başlıkları ve hücreleri için kenarlar ve iç boşluk */
   }
 
+  /* TailwindCSS ile Toggle Switch özelleştirme */
+  .toggle-switch {
+    @apply appearance-none h-6 w-12 rounded-full bg-[#E78F81] relative cursor-pointer transition-colors duration-300;
+  }
 
+  .toggle-switch:checked {
+    @apply bg-[#F95454];
+  }
+
+  .toggle-switch:before {
+    @apply content-[''] absolute left-0 top-0 h-6 w-6 rounded-full bg-white transition-transform duration-300;
+  }
+
+  .toggle-switch:checked:before {
+    @apply transform translate-x-6;
+  }
 }

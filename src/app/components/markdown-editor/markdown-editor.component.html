@@ -1,38 +1,72 @@
-<div class="px-4 py-8 bg-gradient-to-b from-[#FFF5CD] to-[#FFCFB3] min-h-screen">
+<div class="px-4 py-8 bg-gradient-to-b from-[#2C2C2C] to-[#1A1A1A] min-h-screen text-white">
 
   <app-breadcrumb></app-breadcrumb>
 
   <!-- Başlık -->
-  <h1 class="text-3xl font-extrabold text-center text-[#F95454] mb-8">
+  <h1 class="text-3xl font-extrabold text-center text-white mb-8">
     Angular Markdown Editor
   </h1>
 
+  <!-- Toggle Switch -->
+  <div class="flex items-center justify-center mb-6">
+    <label for="markdown-toggle" class="mr-4 text-white">Use Static Markdown</label>
+    <input
+      id="markdown-toggle"
+      type="checkbox"
+      [checked]="isStaticMarkdown"
+      (change)="toggleMarkdownSource()"
+      class="toggle-switch"
+    />
+  </div>
+
   <!-- Form Alanı -->
-  <form [formGroup]="markdownEditorForm" class="bg-white shadow-lg rounded-lg p-6">
+  <form [formGroup]="markdownEditorForm" class="bg-[#2C2C2C] shadow-lg rounded-lg p-6">
     <!-- contentEditable Div -->
     <div
       contentEditable
       formControlName="markdown"
-      class="w-full min-h-48 border-2 border-[#E78F81] rounded p-4 focus:outline-none focus:ring-2 focus:ring-[#F95454] transition-all"
+      class="w-full min-h-48 border-2 rounded p-4 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all bg-white text-[#1A1A1A]"
       placeholder="Write your markdown here..."
+      *ngIf="!isStaticMarkdown"
     ></div>
   </form>
 
   <!-- Markdown Bileşeni -->
-  <section class="p-6 mt-6 bg-white shadow-lg rounded-lg">
-    <h2 class="text-xl font-bold text-[#E78F81] mb-4">Preview</h2>
+  <section class="p-6 mt-6 bg-white text-[#2C2C2C] shadow-lg rounded-lg">
+    <h2 class="text-xl font-bold text-[#2C2C2C] mb-4">Preview</h2>
 
     <!-- ng-template ile markdown verisi boşsa mesaj göster -->
-    <ng-template [ngIf]="!markdown || markdown.trim().length === 0">
-      <div class="text-center text-[#E78F81] font-semibold">
+    <ng-template [ngIf]="!isStaticMarkdown && (!markdown || markdown.trim().length === 0)">
+      <div class="text-center text-[#2C2C2C] font-semibold">
         Please enter some data.
       </div>
     </ng-template>
 
-    <!-- Markdown Bileşeni Verisi Varsa Göster -->
-    <ng-template [ngIf]="markdown && markdown.trim().length > 0">
+    <!-- Static Markdown Bileşeni -->
+    <ng-template [ngIf]="isStaticMarkdown">
       <markdown
-        class="custom-markdown text-gray-800"
+        class="custom-markdown"
+        lineNumbers
+        lineHighlight
+        emoji
+        katex
+        mermaid
+        clipboard
+        [clipboardButtonComponent]="copyClipboardComponent"
+        [katexOptions]="options"
+        [line]="'2, 2-5'"
+        [lineOffset]="1"
+        [start]="1"
+        [inline]="false"
+        [data]="staticMarkdown"
+      >
+      </markdown>
+    </ng-template>
+
+    <!-- Markdown Bileşeni Verisi Varsa Göster -->
+    <ng-template [ngIf]="!isStaticMarkdown && markdown && markdown.trim().length > 0">
+      <markdown
+        class="custom-markdown"
         lineNumbers
         lineHighlight
         emoji
