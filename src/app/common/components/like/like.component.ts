@@ -11,7 +11,7 @@ import {LikeService} from '../../../services/like.service';
   styleUrl: './like.component.css'
 })
 export class LikeComponent implements OnInit {
-  likes: number = 0;
+  likes: number;
   isFlying: boolean = false;
 
   constructor(private likeService: LikeService) {
@@ -22,16 +22,18 @@ export class LikeComponent implements OnInit {
   }
 
   loadLikes(): void {
-    this.likeService.getLikes().subscribe((likes: number) => {
-      this.likes = likes;
+    this.likeService.getLikes().subscribe((response) => {
+      console.log('Likes:', response);
+      this.likes = response?.likes;
     }, (error) => {
       console.error('Error loading likes:', error);
     });
   }
 
   incrementLikes(): void {
-    this.likeService.likePost().subscribe((likes: number) => {
-      this.likes = likes;
+    this.likeService.likePost().subscribe((response) => {
+      console.log('Likes:', response);
+      this.likes = response?.likes;
 
       // Animasyon bittikten sonra, durumu sıfırla
       setTimeout(() => {
@@ -43,8 +45,9 @@ export class LikeComponent implements OnInit {
   }
 
   resetLikes(): void {
-    this.likeService.resetLikes().subscribe((likes: number) => {
-      this.likes = likes;
+    this.likeService.resetLikes().subscribe((response) => {
+      console.log('Likes:', response);
+      this.likes = response?.likes;
     }, (error) => {
       console.error('Error resetting likes:', error);
     });
